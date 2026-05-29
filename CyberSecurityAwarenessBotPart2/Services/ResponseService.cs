@@ -227,6 +227,18 @@ namespace CyberSecurityAwarenessBotPart2.Services
                 input = input.Replace("ransomware", "malware");
             }
 
+            // Check for spam keyword and map it to phishing
+            if (input.Contains("spam"))
+            {
+                input = input.Replace("spam", "phishing");
+            }
+
+            // Check for email keyword and map it to phishing
+            if (input.Contains("email") && !input.Contains("phishing"))
+            {
+                input = input.Replace("email", "phishing");
+            }
+
             foreach (var keyword in responses.Keys)
             {
                 if (input.Contains(keyword))

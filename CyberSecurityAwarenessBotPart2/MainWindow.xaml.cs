@@ -13,6 +13,7 @@ namespace CyberSecurityAwarenessBotPart2
         private bool challengeActive = false;
         private string currentChallenge = "";
         private string lastDiscussedTopic = ""; // Track last topic for "tell me more" commands
+        private int messageCount = 0; // Track total messages sent
 
         public MessageDelegate DisplayMessage;
 
@@ -57,12 +58,15 @@ namespace CyberSecurityAwarenessBotPart2
 
         private void SendButton_Click(object sender, RoutedEventArgs e)
         {
-            
+
         string userMessage = UserInputTextBox.Text;
 
 
             if (string.IsNullOrWhiteSpace(userMessage))
                 return;
+
+            // Increment message counter
+            messageCount++;
 
             // Help command
             if (userMessage.ToLower() == "help")
@@ -88,6 +92,15 @@ namespace CyberSecurityAwarenessBotPart2
             {
                 ChatListBox.Items.Clear();
                 DisplayMessage("Bot: Chat cleared! How can I help you? 😊");
+                UserInputTextBox.Clear();
+                return;
+            }
+
+            // Stats command
+            if (userMessage.ToLower() == "stats")
+            {
+                DisplayMessage("You: " + userMessage);
+                DisplayMessage($"Bot: 📊 You've sent {messageCount} messages in this session!");
                 UserInputTextBox.Clear();
                 return;
             }
