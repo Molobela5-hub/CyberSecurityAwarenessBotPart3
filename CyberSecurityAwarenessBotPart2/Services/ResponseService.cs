@@ -75,6 +75,16 @@ namespace CyberSecurityAwarenessBotPart2.Services
                         "Enable 2FA on all accounts that support it.",
                         "Use an authenticator app instead of SMS when possible."
                     }
+                },
+
+                {
+                    "malware",
+                    new List<string>()
+                    {
+                        "Malware is malicious software designed to harm your computer or steal data.",
+                        "Never download software from untrusted sources.",
+                        "Keep your antivirus software updated to protect against malware."
+                    }
                 }
             };
 
@@ -156,6 +166,19 @@ namespace CyberSecurityAwarenessBotPart2.Services
                         "Be cautious about what you share on social media - it can be used for social engineering.",
                         "Encrypt sensitive files and use secure cloud storage services.",
                         "Educate yourself continuously - cyber threats evolve constantly."
+                    }
+                },
+
+                {
+                    "malware",
+                    new List<string>()
+                    {
+                        "Install reputable antivirus software and run regular scans on your system.",
+                        "Be extremely cautious with email attachments - scan them before opening.",
+                        "Ransomware can encrypt your files - regular backups are your best defense.",
+                        "Avoid clicking pop-ups that claim your computer is infected - they're often fake.",
+                        "Keep your operating system and all software updated to patch security vulnerabilities.",
+                        "Use ad-blockers to prevent malicious ads from infecting your system."
                     }
                 }
             };

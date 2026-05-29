@@ -41,7 +41,15 @@ namespace CyberSecurityAwarenessBotPart2
         private void ShowWelcomeMessage()
         {
             DisplayMessage("Bot: Welcome to the Cybersecurity Awareness Bot! 🔐");
-            DisplayMessage("Bot: Type 'help' to see what I can do, or just start asking questions!");
+            DisplayMessage("Bot: I'm here to help you learn about cybersecurity.");
+            DisplayMessage("Bot: You can:");
+            DisplayMessage("Bot:   • Ask me about passwords, phishing, scams, or browsing safety");
+            DisplayMessage("Bot:   • Type 'start challenge' to test your knowledge");
+            DisplayMessage("Bot:   • Tell me your name: 'My name is [your name]'");
+            DisplayMessage("Bot:   • Set your favorite topic: 'My favourite topic is [topic]'");
+            DisplayMessage("Bot:   • Type 'help' for more commands");
+            DisplayMessage("Bot:   • Type 'clear' to clear the chat");
+            DisplayMessage("Bot: Ask me anything! 😊");
         }
 
         private void SendButton_Click(object sender, RoutedEventArgs e)
@@ -57,13 +65,17 @@ namespace CyberSecurityAwarenessBotPart2
             if (userMessage.ToLower() == "help")
             {
                 DisplayMessage("You: " + userMessage);
-                DisplayMessage("Bot: I can help you with these cybersecurity topics:");
-                DisplayMessage("Bot:   • Passwords");
-                DisplayMessage("Bot:   • Phishing");
-                DisplayMessage("Bot:   • Scams");
-                DisplayMessage("Bot:   • Browsing");
-                DisplayMessage("Bot:   • 2FA (Two-Factor Authentication)");
-                DisplayMessage("Bot:   • Cybersecurity");
+                DisplayMessage("Bot: Here are the available commands:");
+                DisplayMessage("Bot:   • 'hi/hello/hey' - Greet the bot");
+                DisplayMessage("Bot:   • 'start challenge' - Take a cybersecurity quiz");
+                DisplayMessage("Bot:   • 'my name is [name]' - Tell me your name");
+                DisplayMessage("Bot:   • 'what's my name' - I'll tell you your name");
+                DisplayMessage("Bot:   • 'my favourite topic is [topic]' - Set your favorite topic");
+                DisplayMessage("Bot:   • 'tell me a tip' - Get a personalized tip");
+                DisplayMessage("Bot:   • 'thank you/thanks' - Express gratitude");
+                DisplayMessage("Bot:   • 'bye/goodbye' - Say farewell");
+                DisplayMessage("Bot:   • 'clear' - Clear the chat history");
+                DisplayMessage("Bot:   • Ask about: passwords, phishing, scams, browsing, 2FA, malware");
                 UserInputTextBox.Clear();
                 return;
             }
@@ -341,12 +353,7 @@ namespace CyberSecurityAwarenessBotPart2
             // Temporary bot response
             string botResponse = responseService.GetResponse(userMessage);
 
-            // Track the last discussed topic for "tell me more" functionality
-            string currentTopic = responseService.GetLastTopic();
-            if (!string.IsNullOrEmpty(currentTopic))
-            {
-                lastDiscussedTopic = currentTopic;
-            }
+
 
             //Emotion detection
             string emotion = sentimentService.DetectEmotion(userMessage);
