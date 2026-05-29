@@ -1,0 +1,28 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace CyberSecurityAwarenessBotPart2.Assets
+{
+    internal class ascii_art
+    {
+
+              
+        ╔══════════════════════╗
+        ║   CYBER BOT v1.0     ║
+        ╚══════════════════════╝
+
+             [●][●]
+               \___/
+            .-'/   \'-.  
+           /  |     |  \
+          |   |     |   |
+          |   |_____|   |
+          |  /|     |\  |
+          |_| |     | |_|
+             /       \
+            /_/     \_\
+
+
+    }
+}
