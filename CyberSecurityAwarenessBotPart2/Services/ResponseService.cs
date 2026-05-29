@@ -1,5 +1,5 @@
 using System;
-using System.Collections.Generic;
+using System.Collections.Generic
 
 namespace CyberSecurityAwarenessBotPart2.Services
 {
@@ -243,6 +243,12 @@ namespace CyberSecurityAwarenessBotPart2.Services
             if (input.Contains("hacker") || input.Contains("hacking"))
             {
                 input = "cybersecurity " + input;
+            }
+
+            // Check for wifi keyword and map it to browsing
+            if (input.Contains("wifi") || input.Contains("wi-fi"))
+            {
+                input = input.Replace("wifi", "browsing").Replace("wi-fi", "browsing");
             }
 
             foreach (var keyword in responses.Keys)
