@@ -239,6 +239,12 @@ namespace CyberSecurityAwarenessBotPart2.Services
                 input = input.Replace("email", "phishing");
             }
 
+            // Check for hacker keyword and map it to cybersecurity
+            if (input.Contains("hacker") || input.Contains("hacking"))
+            {
+                input = "cybersecurity " + input;
+            }
+
             foreach (var keyword in responses.Keys)
             {
                 if (input.Contains(keyword))

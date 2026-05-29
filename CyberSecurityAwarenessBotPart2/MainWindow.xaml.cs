@@ -81,6 +81,7 @@ namespace CyberSecurityAwarenessBotPart2
                 DisplayMessage("Bot:   • 'tell me a tip' - Get a personalized tip");
                 DisplayMessage("Bot:   • 'thank you/thanks' - Express gratitude");
                 DisplayMessage("Bot:   • 'bye/goodbye' - Say farewell");
+                DisplayMessage("Bot:   • 'stats' - View your message statistics");
                 DisplayMessage("Bot:   • 'clear' - Clear the chat history");
                 DisplayMessage("Bot:   • Ask about: passwords, phishing, scams, browsing, 2FA, malware");
                 UserInputTextBox.Clear();
