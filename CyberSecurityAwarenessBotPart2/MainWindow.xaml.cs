@@ -22,7 +22,10 @@ namespace CyberSecurityAwarenessBotPart2
 
             DisplayMessage = message =>
             {
-                ChatListBox.Items.Add(message);
+                // Add timestamp to user and bot messages
+                string timestamp = DateTime.Now.ToString("HH:mm");
+                string messageWithTime = $"[{timestamp}] {message}";
+                ChatListBox.Items.Add(messageWithTime);
                 // Auto-scroll to the latest message
                 if (ChatListBox.Items.Count > 0)
                 {
