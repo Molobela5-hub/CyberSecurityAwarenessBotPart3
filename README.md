@@ -108,13 +108,11 @@ Add your GitHub repository link here.
 
 ## Video Presentation
 
-Add your unlisted YouTube presentation link here.
+[https://youtu.be/yImUuknoNSA](https://studio.youtube.com/video/yImUuknoNSA/edit) 
 
 ## Author
 
 Lehlogonolo Molobela
 
-## Version
 
-Part 2 Final Submission
 
