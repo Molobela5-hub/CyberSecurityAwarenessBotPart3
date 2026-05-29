@@ -215,6 +215,12 @@ namespace CyberSecurityAwarenessBotPart2.Services
         {
             input = input.ToLower();
 
+            // Check for virus keyword and map it to malware
+            if (input.Contains("virus") && !input.Contains("antivirus"))
+            {
+                input = input.Replace("virus", "malware");
+            }
+
             foreach (var keyword in responses.Keys)
             {
                 if (input.Contains(keyword))
