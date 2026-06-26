@@ -51,7 +51,7 @@ namespace CyberSecurityAwarenessBotPart3.Services
                     CorrectAnswer = "False",
                     Explanation = "Public Wi-Fi can expose your data to hackers using man-in-the-middle attacks.",
                     IsTrueFalse = true
-                },
+                }, 
                 new QuizQuestion
                 {
                     Question = "Which of these is a sign of a phishing email?",
