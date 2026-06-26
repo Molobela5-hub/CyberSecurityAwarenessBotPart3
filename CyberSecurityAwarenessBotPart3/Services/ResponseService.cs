@@ -1,7 +1,7 @@
 using System;
-using System.Collections.Generic
+using System.Collections.Generic;
 
-namespace CyberSecurityAwarenessBotPart2.Services
+namespace CyberSecurityAwarenessBotPart3.Services
 {
     public class ResponseService
     {

@@ -2,7 +2,7 @@
 using System.Data;
 using System.Windows;
 
-namespace CyberSecurityAwarenessBotPart2
+namespace CyberSecurityAwarenessBotPart3
 {
     /// <summary>
     /// Interaction logic for App.xaml

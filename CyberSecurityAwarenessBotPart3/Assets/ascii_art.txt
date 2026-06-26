@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace CyberSecurityAwarenessBotPart2.Assets
+namespace CyberSecurityAwarenessBotPart3.Assets
 {
     internal class ascii_art
     {

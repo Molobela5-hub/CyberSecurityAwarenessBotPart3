@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace CyberSecurityAwarenessBotPart2.Services
+namespace CyberSecurityAwarenessBotPart3.Services
 {
     internal class ChallengeService
     {

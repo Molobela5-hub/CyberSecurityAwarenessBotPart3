@@ -1,7 +1,7 @@
 ﻿using System.Media;
 using System.IO;
 
-namespace CyberSecurityAwarenessBotPart2
+namespace CyberSecurityAwarenessBotPart3
 {
     public static class AudioPlayer
     {

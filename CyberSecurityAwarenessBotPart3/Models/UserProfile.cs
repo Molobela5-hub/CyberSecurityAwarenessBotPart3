@@ -1,4 +1,4 @@
-﻿namespace CyberSecurityAwarenessBotPart2
+﻿namespace CyberSecurityAwarenessBotPart3
 {
     public class UserProfile
     {
