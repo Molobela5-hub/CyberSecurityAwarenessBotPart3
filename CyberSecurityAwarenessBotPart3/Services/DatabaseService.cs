@@ -11,7 +11,7 @@ namespace CyberSecurityAwarenessBotPart3.Services
         public string Description { get; set; } = string.Empty;
         public DateTime? ReminderDate { get; set; }
         public bool IsCompleted { get; set; }
-    }
+    } 
 
     public class DatabaseService
     {
