@@ -110,7 +110,7 @@ namespace CyberSecurityAwarenessBotPart3
             }
 
             // Handle "show_tasks" intent
-            if (intent == "show_tasks" && userMessage.ToLower() != "show tasks" && userMessage.ToLower() != "view tasks")
+            if (intent == "show_tasks" && userMessage.ToLower() != "show tasks" && userMessage.ToLower() != "view tasks") 
             {
                 DisplayMessage("You: " + userMessage); 
 
