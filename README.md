@@ -112,3 +112,5 @@ This repository uses **GitHub Actions** for Continuous Integration. The workflow
 - All Part 1 and Part 2 functionality (voice greeting, ASCII art, keyword recognition, memory, sentiment detection) remains fully functional alongside the new Part 3 features.
 - The Activity Log is stored in memory for the current session only; tasks are the only data persisted permanently, via the MySQL database.
 
+- https://youtu.be/o4ryzE7PAJY 
+
