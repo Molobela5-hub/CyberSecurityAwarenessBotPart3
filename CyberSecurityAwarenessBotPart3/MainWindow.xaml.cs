@@ -106,7 +106,7 @@ namespace CyberSecurityAwarenessBotPart3
                 DisplayMessage("You: " + userMessage);
                 DisplayMessage("Bot: It sounds like you want to add a task! Please use the format: 'Add task - [your task description]'");
                 UserInputTextBox.Clear();
-                return;
+                return; 
             }
 
             // Handle "show_tasks" intent
