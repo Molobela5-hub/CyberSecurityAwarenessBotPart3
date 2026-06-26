@@ -658,7 +658,7 @@ namespace CyberSecurityAwarenessBotPart3
                 UserInputTextBox.Clear();
                 return;
             }
-
+             
             // What's my name - with variations
             string lowerMsg = userMessage.ToLower();
             if (lowerMsg.Contains("what's my name") ||
