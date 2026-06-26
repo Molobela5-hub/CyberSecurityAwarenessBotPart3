@@ -678,7 +678,7 @@ namespace CyberSecurityAwarenessBotPart3
                 }
                 else 
                 {
-                    DisplayMessage("Bot: I don't know your name yet.");
+                    DisplayMessage("Bot: I don't know your name yet."); 
                 }
 
                 UserInputTextBox.Clear();
