@@ -667,7 +667,7 @@ namespace CyberSecurityAwarenessBotPart3
                 lowerMsg.Contains("do you know my name") ||
                 lowerMsg.Contains("do you remember my name") ||
                 lowerMsg.Contains("tell me my name"))
-            {
+            { 
                 string? recalledName = memoryService.Recall("UserName");
 
                 DisplayMessage("You: " + userMessage);
