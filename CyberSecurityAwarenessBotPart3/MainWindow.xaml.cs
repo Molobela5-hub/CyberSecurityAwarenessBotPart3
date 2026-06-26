@@ -112,7 +112,7 @@ namespace CyberSecurityAwarenessBotPart3
             // Handle "show_tasks" intent
             if (intent == "show_tasks" && userMessage.ToLower() != "show tasks" && userMessage.ToLower() != "view tasks")
             {
-                DisplayMessage("You: " + userMessage);
+                DisplayMessage("You: " + userMessage); 
 
                 var tasks = dbService.GetAllTasks();
 
