@@ -676,7 +676,7 @@ namespace CyberSecurityAwarenessBotPart3
                 {
                     DisplayMessage("Bot: Your name is " + recalledName + ".");
                 }
-                else
+                else 
                 {
                     DisplayMessage("Bot: I don't know your name yet.");
                 }
